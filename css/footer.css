@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+
+footer.ftr .follow div i{
+    color: white;
+    padding: 0 .4rem ;
+}
+
+
+.fab{
+
+    color:white;
+}

@@ -1,0 +1,27 @@
+ nav{
+    grid-area: hdr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.NAVmenu{
+
+    display: flex;
+    list-style-type: none;
+
+}
+
+.navItems{
+
+    margin: 5px;
+    padding: 0px;
+}
+
+.navItems > a{
+
+    color: white;
+    font-size: 8px;
+}

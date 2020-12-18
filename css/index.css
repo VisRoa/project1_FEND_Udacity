@@ -1,0 +1,356 @@
+
+@import "nav.css";
+@import "fonts.css";
+@import "footer.css";
+
+:root{
+
+    /*  colors  */
+
+--text-gray:#3f4954;
+--text-blue:#58907C;
+--text-green:#5C8F57;
+--text-yellow:#CFDD3B;
+--light-blue:#8BA3D9;
+--light-pink:#D797F2;
+
+   /*  font-family */
+   --Abel:'Abel',cursive;
+   --Josefin:'Josefin',cursive;
+   --Roboto:'Roboto',cursive;
+   --Livvic:'Livvic',cursive;
+}
+    .container{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto 500px 1fr auto auto;
+        grid-gap: 20px;
+        grid-template-areas:
+        "hdr hdr"
+
+        "main sd"
+
+        "cd cd2 "
+
+        "pst1 pst"
+
+        "sub sub "
+
+        "ft ft  ";
+    }
+header{
+    grid-area: hdr;
+    background: var(--text-gray);
+    color: white;
+    border-style: none;
+}
+h2{
+    font-size: 1.8;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.NAVbar .navItems{
+    display: flex;
+}
+
+.NAVbar .navItems .links{
+ 
+    font-size: 1rem;
+    position: relative;
+    font-family: var(--Josefin);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase; 
+
+}
+.NAVbar .navItems .links:hover{
+    border-radius: 20px;
+    background-color:wheat;
+    color: var(--text-blue);
+}
+.content{
+    grid-area: main;
+    background: var(--text-gray);
+    border-radius: 15px;
+}
+
+.sidebar{
+
+    grid-area: sd;
+    background: url("../images/IMG-5642.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.card1{
+    grid-area: cd;
+    
+    background-image: url("../images/IMG-5638.jpg");
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    
+    
+}
+
+.card2{
+
+    grid-area: cd2;
+    background: var(--text-gray);
+    font-size: 13px;
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    
+}
+
+.card2 .links{
+
+    
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+.card2 h2{
+
+    color: var(--text-green);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: .2rem;
+}
+
+.box{
+
+    border-right: black;
+}
+
+.about-post{
+    text-align: center;
+    color: wheat;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.pst-content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-family: var(--Josefin),var(--Livvic),var(--Roboto);
+
+}
+
+.card3{
+
+    grid-area: pst;
+    border:solid var(--text-gray);
+    font-size: 13px;
+    border-radius: 15px;
+    padding-bottom: 2rem;
+    
+}
+.card3 .about-post{
+    color: var(--light-blue);
+}
+.card3 .pst-content{
+    color: var(--text-gray);
+    font-weight: bold;
+}
+
+.card3 .links{ 
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 3rem;
+}
+.card3 h2{
+
+    color: var(--text-blue);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: .2rem;
+}
+.content h2{
+
+    color: var(--text-green);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding-top: 2rem;
+}
+
+.content .links{
+
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2rem;
+    text-decoration: none;
+    align-items: center;
+}
+.post{
+
+    grid-area: pst1;
+   
+}
+.blogPost{
+    background-color: var(--text-gray);
+    color: white;
+    padding: 3px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: var(--Livvic);
+    font-size: 20px ;
+}
+
+.imgPost-container .imm{
+
+    text-align: center;
+    margin: 5px;
+    border-radius: 30px;
+    width: 210px;
+}
+.quote{
+
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border:double white;
+    border-radius: 30px;
+}
+
+.subs{
+
+    align-items: center;
+    grid-area: sub;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    align-content: center;
+    padding-bottom: 2rem;
+}
+.subs p{
+
+    color: var(--text-green);
+    margin-bottom: -1px;
+    font-weight: bold;
+}
+.email{
+align-content: center;
+width: 70%;
+margin-bottom: 3.5rem;
+font-size: 15px;
+padding-left: 1rem;
+border-radius: 10px;
+}
+
+.btn{
+    grid-area: sub;
+    background-color: var(--text-green);
+    color: white;
+    font-size: 15px;
+    margin:.2rem 5rem;
+    margin-top: -3rem;
+    width: 65%;
+    border-radius: 10px;
+    align-content: center;
+    cursor: pointer;
+}
+
+.ftr{
+
+    grid-area: ft;
+    background: var(--text-gray);
+    color: white;
+    border-style: none;
+
+}
+@media (min-width:641px) and (max-width:780px){
+
+    .pst-content{
+        font-size: 15px;
+    }
+    .card2 h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .card3 h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .container{
+
+        display: grid;
+        height: 100vh;
+        grid-template-columns:1fr ;
+        grid-template-rows: auto auto 300px auto 250px;
+        gap: 5px;
+        grid-template-areas: 
+        "hdr hdr"
+        "main main"
+        "sd sd"
+        "cd2 cd2"
+        "cd cd"
+        "pst pst"
+        "pst1 pst1"
+        "sub sub"
+        "ft ft";
+    }
+    
+    .NAVbar .navItems .links{
+        font-size: 10px;
+    }
+    h2{
+        font-size: .8rem;
+    }
+    figcaption{
+        font-size: 6px;
+    }
+    .content h2{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: -1rem;
+    }
+
+    .pst-content{
+        font-size: 7px;
+    }
+    .content .links{
+        font-size: 7px;
+    }
+    .card2 h2{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .card3 h2{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .blogPost{
+        font-size: 10px;
+    }
+    
+
+}
+
+
+
